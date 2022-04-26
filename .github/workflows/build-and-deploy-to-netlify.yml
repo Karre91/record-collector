@@ -1,7 +1,7 @@
 name: Build and deploy to Netlify
 on: [push]
 env:
-  ASPNETCORE_ENVIRONMENT: 'Action'
+  ASPNETCORE_ENVIRONMENT: "Netlify"
 jobs:
   deployCommitDraft:
     name: Deploy draft to Netlify
@@ -36,7 +36,7 @@ jobs:
       - name: Publish draft to Netlify
         uses: nwtgck/actions-netlify@v1.2
         with:
-          publish-dir: './artifacts/static-site'
+          publish-dir: "./artifacts/static-site"
           enable-commit-comment: true
           production-deploy: false
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -76,7 +76,7 @@ jobs:
       - name: Publish to Netlify production
         uses: nwtgck/actions-netlify@v1.2
         with:
-          publish-dir: './artifacts/static-site'
+          publish-dir: "./artifacts/static-site"
           enable-commit-comment: true
           production-deploy: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
