@@ -10,8 +10,11 @@ images:
 authorname: "Johan Kronberg"
 authorimage: "/files/jk.jpg"
 ---
+
 How to set up deployment of a Record Collector site using only Netlify.
+
 <!--more-->
+
 I was very happy to notice that the [Netlify build-image](https://github.com/netlify/build-image) now has the .NET 6.0.100 SDK installed.
 
 For Record Collector this means that you can get deploys done where Netlify pulls from a Git repository and does the build.
@@ -46,12 +49,12 @@ This means the config used will come from **appsettings.Netlify.json** and this 
 
 These are settings that work well with the sample site.
 
-| Setting           | Value                      |
-|-------------------|----------------------------|
-| Base directory    | *Leave empty*              |
+| Setting           | Value                                                                                                                                                                   |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Base directory    | _Leave empty_                                                                                                                                                           |
 | Build command     | **npm ci && npm run prodbuild && dotnet test ./src/Krompaco.RecordCollector.Generator/Krompaco.RecordCollector.Generator.csproj --logger "console;verbosity=detailed"** |
-| Publish directory | **artifacts/static-site/** |
-| Builds            | *Activate builds*          |
+| Publish directory | **artifacts/static-site/**                                                                                                                                              |
+| Builds            | _Activate builds_                                                                                                                                                       |
 
 You should also be able to push a Shell script and have more work done, for example setting up a specific dotnet SDK version or do more frontend related things before generating the static site. The build-image has support for a wide variety of languages and runtimes.
 
