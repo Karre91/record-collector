@@ -6,9 +6,9 @@ categories:
   - Somehow
   - Something
 images:
-  - "files/leaf.jpg"
+  - "/files/leaf.jpg"
 authorname: "Karin Eurenius / Johan Kronberg"
-authorimage: "files/leaf.jpg"
+authorimage: "/files/leaf.jpg"
 ---
 
 Hello
