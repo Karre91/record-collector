@@ -1,6 +1,6 @@
 +++
-title = "The thing is."
-description = "How to deploy thru netlify."
+title = "1"
+description = "2"
 keywords = "Karin"
 +++
 

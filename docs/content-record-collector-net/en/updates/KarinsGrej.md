@@ -7,7 +7,7 @@ categories:
   - Something
 images:
   - "/files/leaf.jpg"
-authorname: "Karin Eurenius / Johan Kronberg"
+authorname: "Karin Eurenius"
 authorimage: "/files/leaf.jpg"
 ---
 
