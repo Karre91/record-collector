@@ -6,15 +6,9 @@ categories:
   - Somehow
   - Something
 images:
-<<<<<<< HEAD
   - "/files/leaf.jpg"
 authorname: "Karin Eurenius"
 authorimage: "/files/leaf.jpg"
-=======
-  - "files/leaf.jpg"
-authorname: "Karin Eurenius / Johan Kronberg"
-authorimage: "files/leaf.jpg"
->>>>>>> parent of 9349dc9 (Change startpoint of site.)
 ---
 
 Hello
