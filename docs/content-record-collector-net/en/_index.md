@@ -1,10 +1,10 @@
 +++
-title = "1"
-description = "2"
+title = "Karins Site"
+description = ""
 keywords = "Karin"
 +++
 
-This site contains documentation and also acts as a demo web site of the static output.
+This site is created by Karin.
 
 The [Github repo](https://github.com/krompaco/record-collector) has the framework code, templates and content that makes up this site.
 

@@ -36,7 +36,7 @@
 @if (Model.Pagination.Items.FirstOrDefault(x => x.IsSelected)?.Page == null || Model.Pagination.Items.FirstOrDefault(x => x.IsSelected)?.Page == 1)
 {
 	h1Shown = true;
-	if (Model.ContentProperties.FrontendSetup != "simplecss")
+	if (Model.ContentProperties.FrontendSetup == "simplecss")
 	{
 		<div class="max-w-4xl mx-auto pt-10 px-4 sm:px-6 lg:px-8">
 			<h1 class="text-4xl leading-tight tracking-tight font-extrabold text-gray-900 sm:text-5xl">
@@ -63,22 +63,20 @@
 	<div class="max-w-4xl mx-auto pt-10 px-4 sm:px-6 lg:px-8">
 		@if (h1Shown || Model.ContentProperties.FrontendSetup == "simplecss")
 		{
-			<h2 class="text-3xl leading-tight tracking-tight font-extrabold text-gray-900 sm:text-4xl">The latest Karin</h2>
+			<h2 class="text-3xl leading-tight tracking-tight font-extrabold text-gray-900 sm:text-4xl">The latest posts</h2>
 		}
 		else
 		{
-			<h1 class="text-4xl leading-tight tracking-tight font-extrabold text-gray-900 sm:text-5xl">@Model.Localizer["The latest updates"]</h1>
+			<h1 class="text-4xl leading-tight tracking-tight font-extrabold text-gray-900 sm:text-5xl">The latest Karin</h1>
 		}
 
 		<div class="mt-8 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
 			@foreach (var sp in Model.PagedDescendantPages)
 			{
-				@if (Model.ContentProperties.FrontendSetup == "simplecss")
+				@if (Model.ContentProperties.FrontendSetup == "default")
 				{
-                    <p>NextPost</p>
 					<hr/>
 				}
-
 				<div class="flex flex-col overflow-hidden">
 					@if (sp.Images != null && sp.Images.Count > 0)
 					{
