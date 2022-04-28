@@ -9,4 +9,4 @@ She likes to pick mushrooms.
 
 ![Mushies](/en/files/mush.jpg)
 
-- [Fill out form, where should she go.](/about-sub-page/)
+- [Fill out form, where should she go.](/Go-to/)
